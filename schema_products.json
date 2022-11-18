@@ -1,0 +1,143 @@
+{
+    "type": "struct",
+    "fields": [
+        {
+            "name": "code",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+        },
+        {
+            "name": "data",
+            "type": {
+                "type": "array",
+                "elementType": {
+                    "type": "struct",
+                    "fields": [
+                        {
+                            "name": "categories",
+                            "type": {
+                                "type": "array",
+                                "elementType": "long",
+                                "containsNull": true
+                            },
+                            "nullable": true,
+                            "metadata": {}
+                        },
+                        {
+                            "name": "description",
+                            "type": "string",
+                            "nullable": true,
+                            "metadata": {}
+                        },
+                        {
+                            "name": "ean",
+                            "type": "string",
+                            "nullable": true,
+                            "metadata": {}
+                        },
+                        {
+                            "name": "id",
+                            "type": "long",
+                            "nullable": true,
+                            "metadata": {}
+                        },
+                        {
+                            "name": "image",
+                            "type": "string",
+                            "nullable": true,
+                            "metadata": {}
+                        },
+                        {
+                            "name": "images",
+                            "type": {
+                                "type": "array",
+                                "elementType": {
+                                    "type": "struct",
+                                    "fields": [
+                                        {
+                                            "name": "description",
+                                            "type": "string",
+                                            "nullable": true,
+                                            "metadata": {}
+                                        },
+                                        {
+                                            "name": "title",
+                                            "type": "string",
+                                            "nullable": true,
+                                            "metadata": {}
+                                        },
+                                        {
+                                            "name": "url",
+                                            "type": "string",
+                                            "nullable": true,
+                                            "metadata": {}
+                                        }
+                                    ]
+                                },
+                                "containsNull": true
+                            },
+                            "nullable": true,
+                            "metadata": {}
+                        },
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "nullable": true,
+                            "metadata": {}
+                        },
+                        {
+                            "name": "net_price",
+                            "type": "double",
+                            "nullable": true,
+                            "metadata": {}
+                        },
+                        {
+                            "name": "price",
+                            "type": "string",
+                            "nullable": true,
+                            "metadata": {}
+                        },
+                        {
+                            "name": "tags",
+                            "type": {
+                                "type": "array",
+                                "elementType": "string",
+                                "containsNull": true
+                            },
+                            "nullable": true,
+                            "metadata": {}
+                        },
+                        {
+                            "name": "taxes",
+                            "type": "long",
+                            "nullable": true,
+                            "metadata": {}
+                        },
+                        {
+                            "name": "upc",
+                            "type": "string",
+                            "nullable": true,
+                            "metadata": {}
+                        }
+                    ]
+                },
+                "containsNull": true
+            },
+            "nullable": true,
+            "metadata": {}
+        },
+        {
+            "name": "status",
+            "type": "string",
+            "nullable": true,
+            "metadata": {}
+        },
+        {
+            "name": "total",
+            "type": "long",
+            "nullable": true,
+            "metadata": {}
+        }
+    ]
+}
