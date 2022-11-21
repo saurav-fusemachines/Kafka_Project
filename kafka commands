@@ -1,0 +1,43 @@
+
+********************************ZOOKEEPER*******************************************
+         zookeeper-server-start /home/saurav/confluent-7.2.2/etc/kafka/zookeeper.properties
+
+
+*********************KAFKA-SERVER********************************************************
+
+       kafka-server-start /home/saurav/confluent-7.2.2/etc/kafka/server.properties
+
+
+***********************SCHEMA-REGISTRY***************************************
+         
+       schema-registry-start /home/saurav/confluent-7.2.2/etc/schema-registry/schema-registry.properties
+
+
+
+************************CONECT-DISTRIBUTED***********************************
+
+  connect-distributed /home/saurav/confluent-7.2.2/etc/kafka/connect-distributed.properties
+
+
+
+**************************KAFKA-TOPIC--LIST**************************************
+
+ kafka-topics --bootstrap-server localhost:9092 --list
+
+
+****************************KAFKA-TOPIC-DELETE***********************************
+
+   kafka-topics --bootstrap-server localhost:9092 --delete --topic topic2
+
+
+    
+***************************KAFKA-CONSUMER*************************************
+ 
+  kafka-console-consumer --bootstrap-server localhost:9092 --topic topic2 --from-beginning
+
+
+
+
+
+
+
